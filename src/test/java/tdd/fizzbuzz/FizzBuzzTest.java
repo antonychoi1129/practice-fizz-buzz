@@ -43,4 +43,16 @@ public class FizzBuzzTest {
         //then
         assertEquals("Whizz", actual);
     }
+    @Test
+    void should_return_FizzBuzz__when_countingOff_given_number_is_multiple_of_3_and_5() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String actual = fizzBuzz.countingOff(35);
+        //then
+        assertEquals("FizzBuzz", actual);
+    }
+
+
+
 }
