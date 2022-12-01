@@ -2,12 +2,15 @@ package tdd.fizzbuzz;
 
 public class FizzBuzz {
     public String countingOff(int number){
+        String output = "";
+        if(!(number % 3 == 0 || number % 5 == 0 || number % 7 == 0))
+            output += (String.valueOf(number));
         if (number % 3 == 0)
-            return "Fizz";
+            output += ("Fizz");
         if(number % 5 == 0)
-            return "Buzz";
+            output += ("Buzz");
         if(number % 7 == 0)
-            return "Whizz";
-        return String.valueOf(number);
+            output += ("Whizz");
+        return output;
     }
 }
