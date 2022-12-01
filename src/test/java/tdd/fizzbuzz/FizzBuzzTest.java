@@ -14,5 +14,33 @@ public class FizzBuzzTest {
         //then
         assertEquals("1", actual);
     }
-    
+    @Test
+    void should_return_Fizz__when_countingOff_given_number_is_multiple_of_3() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String actual = fizzBuzz.countingOff(3);
+        //then
+        assertEquals("Fizz", actual);
+    }
+
+    @Test
+    void should_return_Buzz__when_countingOff_given_number_is_multiple_of_5() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String actual = fizzBuzz.countingOff(5);
+        //then
+        assertEquals("Buzz", actual);
+    }
+
+    @Test
+    void should_return_Whizz__when_countingOff_given_number_is_multiple_of_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String actual = fizzBuzz.countingOff(7);
+        //then
+        assertEquals("Whizz", actual);
+    }
 }
